@@ -7,7 +7,7 @@ int main() {
 
 	printf("Did you know that 4660 is 0x%x in hex?\n", vuln);
 	printf("It's my favourite number.\n");
-	printf("Can you make the number go backwards?\n");
+	printf("Can you make the number go backwards in hex?\n");
 
 	gets(arr);
 
