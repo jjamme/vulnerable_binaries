@@ -4,7 +4,7 @@
 #include <stdlib.h>
 
 void home (void) {
-	printf("Thanks! I'm home now");
+	printf("Thanks! I'm home now\n");
 	system("/bin/sh");
 }
 
@@ -18,9 +18,9 @@ void ask () {
 	if (strcmp(response, "yes") == 0) {
 		printf("Wow, how will you help?");
 	} else if (strcmp(response, "no") == 0) {
-		printf(":\(");
+		printf(":(\n");
 	} else {
-		printf("What?");
+		printf("What?\n");
 	}
 }
 
