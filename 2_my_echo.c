@@ -1,3 +1,5 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 2_my_echo.c  -o 2_my_echo
+
 #include <stdio.h>
 
 int main(){

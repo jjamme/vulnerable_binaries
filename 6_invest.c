@@ -1,3 +1,5 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 6_invest.c -o 6_invest
+
 #include <stdio.h>
 #include <string.h>
 #include <stdlib.h>

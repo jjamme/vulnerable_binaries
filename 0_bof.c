@@ -1,3 +1,4 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 0_bof.c -o 0_bof
 #include <stdio.h>
 
 int main(){

@@ -1,3 +1,5 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 1_bof.c -o 1_bof
+
 #include <stdio.h>
 #include <strings.h>
 
