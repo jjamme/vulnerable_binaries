@@ -1,4 +1,4 @@
-// gcc -m32 -fno-stack-protector -z execstack -no-pie 6_invest.c -o 6_invest
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 7_invest.c -o 7_invest -lm
 
 #include <stdio.h>
 #include <string.h>

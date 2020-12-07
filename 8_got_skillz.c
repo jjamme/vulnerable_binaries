@@ -1,4 +1,4 @@
-// gcc -m32 -no-pie 5_got_skillz.c -o 5_got_skillz
+// gcc -m32 -no-pie 6_got_skillz.c -o 6_got_skillz
 
 #include <stdio.h>
 #include <stdlib.h>
