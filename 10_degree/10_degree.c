@@ -1,3 +1,4 @@
+// gcc -m32 -fno-stack-protector -z execstack 10_degree.c -o 10_degree
 #include <stdio.h>
 #include <stdlib.h>
 
