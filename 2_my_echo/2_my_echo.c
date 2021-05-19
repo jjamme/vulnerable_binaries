@@ -14,7 +14,7 @@ int main(){
 	printf(input);
 	printf("It isn't the password though\n");
 
-	if(flag){
+	if(flag == 42){
 		printf("Wow how'd you get here?\nWelcome to my house!\n");
 		system("/bin/sh");
 	}
