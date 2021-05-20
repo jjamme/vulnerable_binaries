@@ -5,13 +5,14 @@
 #include <string.h>
 #include <stdlib.h>
 
-void home (void) {
-	printf("Thanks! I'm home now\n");
-	system("/bin/sh");
-}
-
 void ask () {
 	char response[4];
+
+	printf("Help me! I'm lost, can you bring me home?\n");
+	printf("I live at %p\n", &response);
+
+	printf("Do you want to help? (Yes/No)\n");
+
 	gets(&response);
 	for (int i = 0; i < strlen(response); i++) {
 		response[i] = tolower(response[i]);
@@ -27,10 +28,5 @@ void ask () {
 }
 
 int main (void) {
-
-	printf("Help me! I'm lost, can you bring me home?\n");
-	printf("I live at %p\n", home);
-
-	printf("Do you want to help? (Yes/No)\n");
 	ask();
 }
