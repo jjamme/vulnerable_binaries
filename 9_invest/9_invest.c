@@ -1,4 +1,4 @@
-// gcc -m32 -fno-stack-protector -z execstack -no-pie 7_invest.c -o 7_invest -lm
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 9_invest.c -o 9_invest -lm
 
 #include <stdio.h>
 #include <string.h>
@@ -80,7 +80,7 @@ void gamble (Player *player) {
 		strcpy(player_name, player->name);
 		printf("Good job ");
 		printf(player_name);
-	   	printf(" you won %.2f!", gain);
+		printf("You won %.2f!", gain);
 		return;
 	}
 
@@ -165,7 +165,6 @@ int game_loop (Player *player) {
 	} else if (input == 'g') {
 		gamble(player);
 	} else if (input == '\n') {
-		printf("bruh");
 		return 1;
 	} else {
 		printf("Uh, what?\n");
