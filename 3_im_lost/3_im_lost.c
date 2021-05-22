@@ -15,7 +15,7 @@ void ask () {
 
 	gets(&response);
 	for (int i = 0; i < strlen(response); i++) {
-		response[i] = tolower(response[i]);
+		response[i] = response[i];
 	}
 
 	if (strcmp(response, "yes") == 0) {
