@@ -1,6 +1,6 @@
-# 3_im_lost/3_im_lost_again
+# 4_im_lost/4_im_lost_again
 
-Analysis of `3_im_lost` reveals a `gets` so this is an obvious buffer overflow challenge.\
+Analysis of `4_im_lost` reveals a `gets` so this is an obvious buffer overflow challenge.\
 From previous challenges, we saw that there was a win function which we would return into because it had a `system("/bin/sh")` call.
 
 With further analysis, we can not find such a fulike we'd go out nction. So what do we do?
@@ -43,7 +43,7 @@ Once you have crafted the `execve` payload, you can incorporate that into your N
   <summary>My Solutions</summary>
 
 ```python
-# 3_im_lost
+# 4_im_lost
 from pwn import *
 
 #context.log_level = "debug"
@@ -51,7 +51,7 @@ remote_conn = False
 
 IP = ""
 PORT = ""
-FILENAME = "./3_im_lost"
+FILENAME = "./4_im_lost"
 
 if remote_conn:
     p = remote(IP, PORT)
@@ -85,7 +85,7 @@ p.interactive()
 ```
 
 ```python
-# 3_im_lost_again
+# 4_im_lost_again
 from pwn import *
 
 #context.log_level = "debug"
@@ -93,7 +93,7 @@ remote_conn = False
 
 IP = ""
 PORT = ""
-FILENAME = "./3_im_lost_again"
+FILENAME = "./4_im_lost_again"
 
 if remote_conn:
     p = remote(IP, PORT)

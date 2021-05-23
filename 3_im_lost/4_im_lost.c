@@ -1,4 +1,4 @@
-// gcc -m32 -fno-stack-protector -z execstack -no-pie 3_im_lost.c -o 3_im_lost
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 4_im_lost.c -o 4_im_lost
 
 #include <stdio.h>
 #include <ctype.h>
