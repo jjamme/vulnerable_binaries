@@ -1,3 +1,5 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 3_feed_me.c -o 3_feed_me
+
 #include <stdio.h>
 #include <stdlib.h>
 
