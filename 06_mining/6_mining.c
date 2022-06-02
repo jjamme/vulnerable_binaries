@@ -1,3 +1,4 @@
+// gcc -m32 -fno-stack-protector -z execstack -no-pie 6_mining.c -o 6_mining
 #include <stdio.h>
 #include <stdlib.h>
 
